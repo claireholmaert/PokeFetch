@@ -1,0 +1,13 @@
+<div *ngIf="pokemons$ | async as pokemons" class="pokemon">
+  <div class="idImg">
+    <p>{{ pokemons.id | number: '3.0-0'}}</p>
+    <img [src]="pokemons.sprites.other.dream_world.front_default" [alt]="pokemons.name">
+  </div>
+  <div class="elements">
+    <ul *ngFor="let elements of pokemons.types">
+      <li>{{ elements.type.name }}</li>
+    </ul>
+    <p>{{ pokemons.weight }} Kg</p>
+    <p>{{ pokemons.height }} m</p>
+  </div>
+</div>

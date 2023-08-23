@@ -1,0 +1,30 @@
+.pokemons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  .pokemon {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.toggle {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+

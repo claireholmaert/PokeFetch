@@ -1,0 +1,14 @@
+<h2>Dans l'ordre du pokédex :</h2>
+
+<div *ngIf="apiPokemons$ | async as resultApi" class="pokemons">
+  <div *ngFor="let all_pokemons of resultApi.results" class="pokemon">
+    <a routerLink="/pokemon/{{ all_pokemons.name }}">
+      <app-one-pokemon [pokemon]="all_pokemons"></app-one-pokemon>
+      <p>{{ all_pokemons.name }}</p>
+    </a>
+  </div>
+</div>
+<div class="toggle">
+  <i class="fa-solid fa-circle-arrow-left fa-2xl"></i>
+  <i class="fa-solid fa-circle-arrow-right fa-2xl"></i>
+</div>

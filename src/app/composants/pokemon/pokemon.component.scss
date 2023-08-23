@@ -1,0 +1,41 @@
+
+
+.pokemon {
+  margin-left: 30px;
+  margin-top: 50px;
+  display: flex;
+  gap: 100px;
+  img {
+    width: 30vw;
+    height: 30vh;
+  }
+  .idImg {
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px;
+  }
+
+}
+
+$types: (
+  bug: 'url(../assets/Types/Bug.webp)',
+  dark: 'url(../assets/Types/Dark.webp)',
+  dragon: 'url(../assets/Types/Dragon.webp)',
+  electric: 'url(../assets/Types/Electric.webp)',
+  fairy: 'url(../assets/Types/Fairy.webp)',
+  fighting: 'url(../assets/Types/Fighting.webp)',
+  fire: 'url(../assets/Types/Fire.webp)',
+  flying: 'url(../assets/Types/Flying.webp)',
+  ghost: 'url(../assets/Types/Ghost.webp)',
+  grass: url("/assets/Types/Grass.webp"),
+  ground: 'url(src/assets/img/all_pokemons.png)',
+  ice: 'url(../assets/Types/Ice.webp)',
+  poison: 'url(../assets/Types/Poison.webp)',
+  psychic: 'url(../assets/Types/Psychic.webp)',
+  rock: 'url(../assets/Types/Rock.webp)',
+  steel: 'url(../assets/Types/Steel.webp)',
+  water: 'url(../assets/Types/Water.webp)'
+);
+
+
